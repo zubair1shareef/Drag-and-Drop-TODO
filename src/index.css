@@ -1,4 +1,5 @@
 body {
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +11,145 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing :border-box;
+}
+body{
+  background-color: aliceblue;
+  
+}
+
+.flexbox{
+  display:flex;
+  justify-content:space-around;
+  width:100%;
+  max-width: 960px;
+
+  height:100vh;
+  overflow:0 auto;
+  padding:15px;
+}
+
+.flexbox .board{
+  display:block !important;
+  flex-direction:column;
+  padding:15px;
+ 
+  width:300px ;
+  max-width: 700px ;
+  background-color:#CAD5E2 !important;
+  border: 10px solid black;
+ /* transform: scaleY(-1);*/
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(188, 183, 183);
+  
+
+  height:400px;
+}
+.center {
+  margin: auto;
+  width: 80% !important;
+ 
+  
+  padding: 10px;
+}
+.flexbox .board .card1{
+  
+  display:"inline-flex" !important;
+  padding: 15px 25p !important;
+  background-color:white !important;
+  transition: transform .2s; 
+  border: 1px solid black;
+  box-shadow:2px 2px 10px black;
+  
+
+  cursor:pointer !important;
+
+  
+
+ 
+  
+}
+.card1:hover {
+  transform: scale(1.07); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.mainbody {
+  max-width: 1024px;
+  margin: auto;
+  background-color:white !important;
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  background-color: white;
+  max-width: 1024px;
+  max-height: 800px;
+  text-align: center;
+}
+
+#task {
+  text-align: center;
+  display: inline ;
+  margin : 0 auto;
+  width: 300px;
+  height: 24px;
+  vertical-align: bottom;
+  font-size: 15px;
+}
+
+
+#task-button {
+  display: inline;
+  margin : 0 auto;
+  height: 30px;
+  width: 30px;
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+#list-container {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.blockk{
+  width:200px;
+  height:200px;
+  background-color:white;
+}
+.inputall{
+  background-color:#CAD5E2 !important;
+  border: 1px black;
+  color:black;
+  
+  width: 40%;
+  margin: 0px auto;
+  border-radius: 25px;
+  border: 3px solid #758283;
+  box-shadow: 10px 10px 10px rgb(188, 183, 183);
+}
+
+.inputcss1{
+  
+  background-color:aliceblue !important;
+  border-radius: 10px !important;
+  box-shadow: 10px 10px 10px rgb(188, 183, 183) !important;
+}
+.inputcss2{
+  background-color:aliceblue !important;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgb(188, 183, 183);
 }
